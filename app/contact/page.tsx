@@ -49,7 +49,7 @@ export default function ContactPage() {
               <div className="text-base mb-2 font-medium">Enquiries:</div>
               <div className="flex items-center gap-2 text-lg text-muted-foreground">
                 <Copy className="w-6 h-6" />
-                <span>support@hidenc.com</span>
+                <span>support@encrova.com</span>
               </div>
             </div>
           </div>

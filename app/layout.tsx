@@ -8,9 +8,9 @@ import favicon from "./favicon.ico";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const title = "Encrova group - Digital Solutions";
+const title = "Encrova Holding Limited - Digital Solutions";
 const description =
-  "Encrova group digital solutions: social network, communication, logistics, artificial intelligence, blockchain, and mobile platforms in a single strategic vision.";
+  "Digital solutions: social network, communication, logistics, artificial intelligence, blockchain, and mobile platforms in a single strategic vision.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://encrova.com"),
@@ -66,7 +66,7 @@ export default function RootLayout({
         <meta property="og:url" content="https://www.encrova.com" />
         <meta property="og:image:width" content="1916" />
         <meta property="og:image:height" content="982" />
-        <meta property="og:image:alt" content="Encrova - Digital solutions" />
+        <meta property="og:image:alt" content="Encrova Holding Limited - Digital solutions" />
         <meta
           name="keywords"
           content="Tecnology, aplications, blockchain, infrastructure, AI, social network"
@@ -83,7 +83,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
         <meta name="mobile-web-app-capable" content="yes" />
 
-        <meta name="apple-mobile-web-app-title" content="Encrova" />
+        <meta name="apple-mobile-web-app-title" content="Encrova Holding Limited" />
       </head>
       <body
         className={`${inter.className} bg-background text-foreground antialiased`}

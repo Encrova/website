@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container flex flex-col gap-8 py-8 md:flex-row md:py-12">
         <div className="flex-1 space-y-4 min-w-[220px]">
           <div className="flex items-center gap-2">
-            <img src={logo.src} alt="Hidenc Logo" className="h-24 w-24" />
+            <img src={logo.src} alt="Encrova Logo" className="w-[220px]" />
           </div>
           <p className="text-sm text-muted-foreground">
             Technology empowers global change.
@@ -19,7 +19,7 @@ export default function Footer() {
             Flat /RM 1006 10/F Po Yip Building <br /> 23 Hing Yip Street Kwun
             Tong KL Hong Kong
           </p>
-          <p className="text-xs text-muted-foreground">support@hidenc.com</p>
+          <p className="text-xs text-muted-foreground">support@encrova.com</p>
           <div className="flex space-x-3 pt-2">
             <Link
               href="https://x.com/encrova"
@@ -41,7 +41,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="flex justify-end">
+        <div className="flex md:hidden md:justify-end">
           <div className="space-y-4">
             <h3 className="text-sm font-medium">Menu</h3>
             <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
@@ -74,7 +74,7 @@ export default function Footer() {
       </div>
       <div className="container border-t py-6">
         <p className="text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Hidenc. All rights reserved.
+          © {new Date().getFullYear()} Alright reserve. Encrova Holding Limited.
         </p>
       </div>
     </footer>

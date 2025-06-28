@@ -1,7 +1,11 @@
+'use client'
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import { useRouter } from "next/navigation"
 
 export default function Hero() {
+  const router = useRouter()
   return (
     <section className="container flex min-h-[calc(100vh-3.5rem)] max-w-screen-2xl flex-col items-center justify-center space-y-8 py-24 text-center md:py-32">
       <div className="space-y-4">
@@ -15,12 +19,12 @@ export default function Hero() {
         </p>
       </div>
       <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center justify-center">
-        <Button size="lg" className="w-full sm:w-auto">
+        <Button onClick={() => router.push("/#about-us")}  size="lg" className="w-full sm:w-auto">
           Discover our approach
           <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
-        <Button variant="outline" size="lg" className="w-full sm:w-auto">
-          Request a meeting
+        <Button onClick={() => router.push("/contact")} variant="outline" size="lg" className="w-full sm:w-auto">
+          Contact
         </Button>
       </div>
     </section>
