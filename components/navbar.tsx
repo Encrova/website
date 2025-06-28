@@ -5,23 +5,25 @@ import { Button } from "@/components/ui/button"
 import { FaBars, FaGithub } from "react-icons/fa"
 import { Sheet, SheetTrigger, SheetContent, SheetClose, SheetTitle, SheetDescription } from "@/components/ui/sheet"
 
+import logo from "@/assets/logo.png";
+
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center relative">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <span className="font-bold">FakeCorp</span>
+          <img src={logo.src} alt="Encrova logo" className="h-12 w-12" />
         </Link>
         {/* Desktop menu */}
         <nav className="hidden sm:flex flex-1 items-center space-x-5 text-sm font-medium">
-          <Link href="/solutions" className="transition-colors hover:text-primary">
+          <Link href="/#about-us" className="transition-colors hover:text-primary">
+            About us
+          </Link>
+          <Link href="/#solutions" className="transition-colors hover:text-primary">
             Solutions
           </Link>
-          <Link href="/industries" className="transition-colors hover:text-primary">
-            Industries
-          </Link>
-          <Link href="/about" className="transition-colors hover:text-primary">
-            About Us
+          <Link href="/#contact" className="transition-colors hover:text-primary">
+            Contact
           </Link>
         </nav>
         {/* Desktop action buttons */}
@@ -32,14 +34,14 @@ export default function Navbar() {
               <span className="sr-only">GitHub</span>
             </Button>
           </Link>
-          <Link href="/contact">
+         {/*  <Link href="/contact">
             <Button variant="ghost" size="sm">
               Contact
             </Button>
           </Link>
           <Link href="/demo">
             <Button size="sm">Get a Demo</Button>
-          </Link>
+          </Link> */}
         </div>
         {/* Mobile hamburger button with Sheet */}
         <Sheet>

@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function CTA() {
   return (
-    <section className="border-t">
+    <section id="contact" className="border-t">
       <div className="container flex flex-col items-center gap-4 py-24 text-center md:py-32">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
           Ready to build a high-impact technology solution?

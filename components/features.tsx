@@ -1,40 +1,49 @@
-import { Brain, Cloud, Shield, Zap } from "lucide-react"
+import { TabletSmartphone, IdCard, BotMessageSquare, LayoutPanelTop  } from "lucide-react";
 
 const features = [
   {
     name: "Smart mobile apps",
-    description: "Native and hybrid interfaces with modular logic for consumption, social network, and corporate tourism.",
-    icon: Brain,
+    description:
+      "Native and hybrid interfaces with modular logic for consumption, social network, and corporate tourism.",
+    icon: TabletSmartphone,
   },
   {
     name: "Traceability systems and digital identity",
-    description: "Implementation of blockchain technology for verification, transparency, and integrity of business data.",
-    icon: Shield,
+    description:
+      "Implementation of blockchain technology for verification, transparency, and integrity of business data.",
+    icon: IdCard,
   },
   {
     name: "AI Virtual Assistants",
-    description: "Development of conversational assistants to improve the user experience and automate attention or recommendations.",
-    icon: Zap,
+    description:
+      "Development of conversational assistants to improve the user experience and automate attention or recommendations.",
+    icon: BotMessageSquare,
   },
   {
     name: "Technological infrastructure for international expansion",
-    description: "Robust backends, custom APIs, and scalable administrative panels.",
-    icon: Cloud,
+    description:
+      "Robust backends, custom APIs, and scalable administrative panels.",
+    icon: LayoutPanelTop,
   },
-]
+];
 
 export default function Features() {
   return (
-    <section className="container space-y-16 py-24 md:py-32">
+    <section id="solutions" className="container space-y-16 py-24 md:py-32">
       <div className="mx-auto max-w-[58rem] text-center">
-        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">We create useful, secure, and scalable technology.</h2>
+        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
+          We create useful, secure, and scalable technology.
+        </h2>
         <p className="mt-4 text-muted-foreground sm:text-lg">
           Our approach is to create intelligent solutions with real impact.
         </p>
       </div>
       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
         {features.map((feature) => (
-          <div key={feature.name} className="relative overflow-hidden rounded-lg border bg-background p-8">
+          <div
+            key={feature.name}
+            className="relative overflow-hidden rounded-lg border bg-background p-8"
+          >
             <div className="flex items-center gap-4">
               <feature.icon className="h-8 w-8" />
               <h3 className="font-bold">{feature.name}</h3>
@@ -44,5 +53,5 @@ export default function Features() {
         ))}
       </div>
     </section>
-  )
+  );
 }

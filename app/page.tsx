@@ -1,6 +1,6 @@
 import Navbar from "@/components/navbar"
 import Hero from "@/components/hero"
-import TechStackSection from "@/components/tech-stack-section"
+import AboutUs from "@/components/tech-stack-section"
 import TechLogoCarousel from "@/components/tech-logo-carousel"
 import Features from "@/components/features"
 import CTA from "@/components/cta"
@@ -19,7 +19,7 @@ export default function Home() {
       <div className="relative z-10">
         <Navbar />
         <Hero />
-        <TechStackSection />
+        <AboutUs />
         <TechLogoCarousel />
         <Features />
         <CTA />
